@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OBLIQUE · avant-garde apparel · structural garments</title>
+  <title>ORBIT · avant-garde apparel · structural garments</title>
   <!-- Typography: sharp grotesk + architectural serif -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Unbounded:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Font Awesome 6 -->
@@ -61,7 +61,7 @@
     ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 0px; }
 
     /* header — brutalist */
-    .oblique-header {
+    .ORBIT-header {
       position: fixed;
       width: 100%;
       top: 0;
@@ -71,7 +71,7 @@
       border-bottom: 1px solid var(--accent);
       transition: var(--transition);
     }
-    [data-theme="edge-light"] .oblique-header {
+    [data-theme="edge-light"] .ORBIT-header {
       background: rgba(245, 243, 239, 0.96);
     }
 
@@ -163,7 +163,7 @@
     }
 
     /* hero — geometric */
-    .hero-oblique {
+    .hero-ORBIT {
       min-height: 92vh;
       display: flex;
       align-items: center;
@@ -172,7 +172,7 @@
       background-size: cover;
       background-position: 50% 30%;
     }
-    .hero-oblique::after {
+    .hero-ORBIT::after {
       content: '';
       position: absolute;
       inset: 0;
@@ -544,7 +544,7 @@
       backdrop-filter: blur(20px);
       transition: opacity 0.25s ease;
     }
-    .oblique-modal {
+    .ORBIT-modal {
       background: var(--surface);
       max-width: 540px;
       width: 100%;
@@ -634,28 +634,28 @@
 </head>
 <body>
 
-<!-- ENTRY MODAL - OBLIQUE INVITATION -->
+<!-- ENTRY MODAL - ORBIT INVITATION -->
 <div id="entryModal" class="modal-overlay">
-  <div class="oblique-modal">
+  <div class="ORBIT-modal">
     <button id="closeModalBtn" class="modal-close-icon"><i class="fa-regular fa-square"></i></button>
     <div class="modal-icon-badge"><i class="fas fa-cut"></i></div>
-    <h2 class="modal-title">OBLIQUE</h2>
-    <p class="modal-description">Avant-garde apparel for the structural self. Deconstructed silhouettes, raw textiles, and garments that challenge form. Enter the oblique.</p>
+    <h2 class="modal-title">ORBIT</h2>
+    <p class="modal-description">Avant-garde apparel for the structural self. Deconstructed silhouettes, raw textiles, and garments that challenge form. Enter the ORBIT.</p>
     <div class="modal-buttons">
-      <button id="enterBtn" class="btn-modal-primary">ENTER THE OBLIQUE</button>
+      <button id="enterBtn" class="btn-modal-primary">ENTER THE ORBIT</button>
       <button id="laterBtn" class="btn-modal-secondary">WANDER LATER</button>
     </div>
   </div>
 </div>
 
-<header class="oblique-header">
+<header class="ORBIT-header">
   <div class="nav-container">
-    <div class="brand">OBLIQUE<span> · structural</span></div>
+    <div class="brand">ORBIT<span> · structural</span></div>
     <nav class="nav-links">
       <a href="#shop">GARMENTS</a>
       <a href="#shop">ACCESSORIES</a>
       <a href="#shop">OBJECTS</a>
-      <a href="#">OBLIQUE</a>
+      <a href="#">ORBIT</a>
     </nav>
     <div class="utility-actions">
       <button id="themeToggle">🌙</button>
@@ -668,12 +668,12 @@
 </header>
 
 <main>
-  <section class="hero-oblique">
+  <section class="hero-ORBIT">
     <div class="hero-content">
       <div class="hero-sub">DECONSTRUCTED · RAW · STRUCTURAL</div>
-      <h1 class="hero-main-title">OBLIQUE</h1>
+      <h1 class="hero-main-title">ORBIT</h1>
       <div class="hero-offer">First silhouette: <strong>15% off</strong> your first garment</div>
-      <a href="#shop" class="btn-primary">ENTER THE OBLIQUE →</a>
+      <a href="#shop" class="btn-primary">ENTER THE ORBIT →</a>
     </div>
   </section>
 
@@ -687,9 +687,9 @@
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">OBLIQUE</div>
+    <div class="footer-logo">ORBIT</div>
     <div class="footer-locations">ANTWERP · TOKYO · PARIS · NEW YORK</div>
-    <p class="copyright" style="font-size:0.5rem; opacity:0.6;">© 2026 OBLIQUE — form follows fracture.</p>
+    <p class="copyright" style="font-size:0.5rem; opacity:0.6;">© 2026 ORBIT — form follows fracture.</p>
   </div>
 </footer>
 
@@ -708,13 +708,13 @@
         <span>Total (USD)</span>
         <span id="cartTotalPrice">$0</span>
       </div>
-      <button class="checkout-btn" id="checkoutBtn">⟡ OBLIQUE CHECKOUT ⟡</button>
+      <button class="checkout-btn" id="checkoutBtn">⟡ ORBIT CHECKOUT ⟡</button>
     </div>
   </div>
 </div>
 
 <script>
-  // OBLIQUE COLLECTION — avant-garde apparel, deconstructed garments
+  // ORBIT COLLECTION — avant-garde apparel, deconstructed garments
   const products = [
     { id: 1, name: "Asymmetric Wool Coat", category: "OUTERWEAR", original: 420, discountPrice: 357, img: "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=1374&auto=format&fit=crop", alt: "asymmetric coat" },
     { id: 2, name: "Deconstructed Linen Shirt", category: "TOPS", original: 280, discountPrice: 238, img: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=1376&auto=format&fit=crop", alt: "deconstructed shirt" },
@@ -740,9 +740,9 @@
   const cartTotalPriceSpan = document.getElementById('cartTotalPrice');
   const cartCountSpan = document.getElementById('cartCount');
 
-  function saveCart() { localStorage.setItem('OBLIQUE_Cart', JSON.stringify(cart)); }
+  function saveCart() { localStorage.setItem('ORBIT_Cart', JSON.stringify(cart)); }
   function loadCart() {
-    const saved = localStorage.getItem('OBLIQUE_Cart');
+    const saved = localStorage.getItem('ORBIT_Cart');
     if (saved) { cart = JSON.parse(saved); }
     renderCartUI();
     updateCartCount();
@@ -799,7 +799,7 @@
     else cart.push({id:prod.id, name:prod.name, price:prod.discountPrice, quantity:1, img:prod.img});
     renderCartUI();
     const btn = document.querySelector(`.add-btn-${pid}`);
-    if(btn){ let old = btn.innerText; btn.innerText="✓ OBLIQUE"; setTimeout(()=>btn.innerText=old,700);}
+    if(btn){ let old = btn.innerText; btn.innerText="✓ ORBIT"; setTimeout(()=>btn.innerText=old,700);}
     cartOverlay.classList.add('active');
   }
 
@@ -827,7 +827,7 @@
 
   // theme
   function initTheme(){
-    const stored = localStorage.getItem('OBLIQUE_theme');
+    const stored = localStorage.getItem('ORBIT_theme');
     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     let theme = stored || (systemDark ? 'dark' : 'light');
     document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'edge' : 'edge-light');
@@ -838,7 +838,7 @@
     const curr = document.documentElement.getAttribute('data-theme');
     const next = curr === 'edge' ? 'edge-light' : 'edge';
     document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('OBLIQUE_theme', next === 'edge' ? 'dark' : 'light');
+    localStorage.setItem('ORBIT_theme', next === 'edge' ? 'dark' : 'light');
     const toggleBtn = document.getElementById('themeToggle');
     if(toggleBtn) toggleBtn.textContent = next === 'edge' ? '☀️' : '🌙';
   }
@@ -856,7 +856,7 @@
   cartIcon?.addEventListener('click',()=>cartOverlay.classList.add('active'));
   closeCartBtn?.addEventListener('click',()=>cartOverlay.classList.remove('active'));
   cartOverlay?.addEventListener('click',(e)=>{ if(e.target===cartOverlay) cartOverlay.classList.remove('active'); });
-  document.getElementById('checkoutBtn')?.addEventListener('click',()=>{ alert('Thank you for entering the oblique. Your structural garments will arrive with architectural intention.'); cart=[]; renderCartUI(); cartOverlay.classList.remove('active'); });
+  document.getElementById('checkoutBtn')?.addEventListener('click',()=>{ alert('Thank you for entering the ORBIT. Your structural garments will arrive with architectural intention.'); cart=[]; renderCartUI(); cartOverlay.classList.remove('active'); });
   document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.addEventListener('click',function(e){ const t=this.getAttribute('href'); if(t==="#") return; const sec=document.querySelector(t); if(sec){ e.preventDefault(); sec.scrollIntoView({behavior:'smooth'}); } }); });
 
   renderProducts();
